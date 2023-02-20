@@ -1,0 +1,85 @@
+        body {
+  background: #393053;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+
+.container {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.container h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.jumbotron {
+  color: #fff;
+  padding: 20px;
+  height: 100%;
+}
+
+.lead {
+  font-size: 16px;
+}
+
+.jumbotron img {
+  width: 200px;
+  border: 2px solid #fff;
+}
+
+section {
+  height: 100vh;
+  padding: 0px;
+}
+
+.link-list {
+  width: 100%;
+  padding: 2px;
+  margin-top: 5px;
+}
+
+.link-list a {
+  background: #18122B;
+  border: 1px solid #fff;
+  font-size: 16px;
+  color: #fff;
+  display: block;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.link-list a:hover {
+  background: #fff;
+  color: #393053;
+  font-weight: bold;
+  transition: background 0.6s ease;
+}
+
+#date-time {
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 992px) {
+  section {
+    padding: 15rem;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    text-align: center;
+  }
+}
