@@ -1,2 +1,0 @@
-# LinkTree
-website pertama
