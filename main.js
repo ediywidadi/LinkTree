@@ -1,8 +1,9 @@
-function displayDateTime() {
-        var today = new Date();
-        var date = today.toLocaleDateString();
-        var time = today.toLocaleTimeString();
-        var dateTimeString = date + ' ' + time;
-        document.getElementById("date-time").innerHTML = dateTimeString;
-      }
-      setInterval(displayDateTime, 1000); // Refresh setiap 1 detik
+let links = document.querySelectorAll(".bounce");
+let i = 0;
+
+setInterval(function() {
+  links[i].classList.remove("bounce");
+  void links[i].offsetWidth;
+  i = (i + 1) % links.length;
+  links[i].classList.add("bounce");
+}, 6000);

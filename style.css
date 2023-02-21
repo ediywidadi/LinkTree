@@ -1,5 +1,9 @@
-        body {
-  background: #393053;
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap');
+
+ body {
+  background: linear-gradient(to top, #3C6255, #A6BB8D);
+  font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -10,31 +14,35 @@ a:focus {
   outline: none;
 }
 
-
 .container {
+  background: transparent;
   text-align: center;
   padding: 1rem;
-  border-radius: 15px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
 }
 
 .container h1 {
-  font-size: 3rem;
+  font-size: 25px;
   font-weight: bold;
 }
 
 .jumbotron {
   color: #fff;
-  padding: 20px;
   height: 100%;
 }
 
 .lead {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .jumbotron img {
   width: 200px;
-  border: 2px solid #fff;
 }
 
 section {
@@ -48,32 +56,52 @@ section {
   margin-top: 5px;
 }
 
-.link-list a {
-  background: #18122B;
-  border: 1px solid #fff;
-  font-size: 16px;
-  color: #fff;
-  display: block;
-  padding: 15px;
-  margin: 10px;
-  border-radius: 20px;
+.link-list a{
+  font-size: 3rem;
+  color:#fff;
+  margin-right: 1rem;
 }
 
 .link-list a:hover {
-  background: #fff;
-  color: #393053;
-  font-weight: bold;
-  transition: background 0.6s ease;
+  animation: bounce 0.4s linear;
 }
 
-#date-time {
-  font-size: 12px;
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  25% { transform: translateY(-5px); }
+  50% { transform: translateY(0); }
+  75% { transform: translateY(-2.5px); }
+  100% { transform: translateY(0); }
 }
+
+.link-list ul a{
+  background: #fff;
+  font-size: 20px;
+  color: #61876E;
+  display: block;
+  padding: 1em;
+  margin-bottom: 16px;
+  border-radius: 10px;
+}
+
+
+.link-list ul a:hover {
+  background: #fff;
+  transition: background 0.6s ease;
+  animation: bounce 0.4s linear;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  25% { transform: translateY(-5px); }
+  50% { transform: translateY(0); }
+  75% { transform: translateY(-2.5px); }
+  100% { transform: translateY(0); }
+}
+
 
 @media only screen and (min-width: 992px) {
   section {
-    padding: 15rem;
-    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,5 +109,37 @@ section {
   
   .container {
     text-align: center;
+    padding:10em;
+  }
+}
+
+.bounce {
+  display: inline-block;
+  animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    text-align: center;
+    padding-right:10em;
+    padding-left: 10em;
   }
 }
