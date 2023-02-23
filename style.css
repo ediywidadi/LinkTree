@@ -99,20 +99,6 @@ section {
   100% { transform: translateY(0); }
 }
 
-
-@media only screen and (min-width: 992px) {
-  section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .container {
-    text-align: center;
-    padding:10em;
-  }
-}
-
 .bounce {
   display: inline-block;
   animation: bounce 3s infinite;
@@ -127,6 +113,24 @@ section {
   }
 }
 
+
+
+
+
+
+
+@media only screen and (min-width: 992px) {
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    text-align: center;
+    padding:10em;
+  }
+}
 
 
 
